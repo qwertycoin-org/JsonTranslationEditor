@@ -1,5 +1,6 @@
 ![image](https://cdn.qwertycoin.org/images/press/other/qwc-github-3.png)
 
+
 # Binary for testing available in the releases section
 
 ## I slapped this together after using the [BabelEdit](https://www.codeandweb.com/babeledit) trial and wanted to keep some basic functionality. This is my first time using WPF so it is fairly ugly both code and UI
@@ -42,7 +43,7 @@ or
  Add Translation (CTRL+A)
  Page Forward (ALT+Right)
  Page Back (Alt+Left)
-
+```
 
 
 ## Donate <a name="donate"></a>
@@ -68,4 +69,4 @@ ETN: etnkJXJFqiH9FCt6Gq2HWHPeY92YFsmvKX7qaysvnV11M796Xmovo2nSu6EUCMnniqRqAhKX9AQ
 
 #### Thanks <a name="thanks"></a>
 
-thesmallbang, Qwertycoin Community
+Thesmallbang
