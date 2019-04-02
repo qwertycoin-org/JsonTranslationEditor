@@ -1,4 +1,4 @@
-﻿using JsonTranslationEditor.Extensions;
+﻿using QWCTranslationEditor.Extensions;
 using Newtonsoft.Json;
 using Ookii.Dialogs.Wpf;
 using System;
@@ -18,7 +18,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace JsonTranslationEditor
+namespace QWCTranslationEditor
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

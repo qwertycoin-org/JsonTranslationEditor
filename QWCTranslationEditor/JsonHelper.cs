@@ -1,4 +1,4 @@
-﻿using JsonTranslationEditor.Extensions;
+﻿using QWCTranslationEditor.Extensions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace JsonTranslationEditor
+namespace QWCTranslationEditor
 {
     public class JsonHelper
     {
@@ -49,7 +49,7 @@ namespace JsonTranslationEditor
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Invalid json in " + language);
+                // MessageBox.Show("Invalid json in " + language);
             }
             settings.AddRange(languageSettings);
         }

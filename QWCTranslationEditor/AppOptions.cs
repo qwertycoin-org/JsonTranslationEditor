@@ -5,9 +5,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static JsonTranslationEditor.JsonHelper;
+using static QWCTranslationEditor.JsonHelper;
 
-namespace JsonTranslationEditor
+namespace QWCTranslationEditor
 {
     public class AppOptions
     {
@@ -18,7 +18,7 @@ namespace JsonTranslationEditor
         public int LoadingDepth { get; set; }
 
         static string path = System.IO.Path.Combine(Environment.GetFolderPath(
-               Environment.SpecialFolder.MyDoc‌​uments), "JsonTranslationEditor");
+               Environment.SpecialFolder.MyDoc‌​uments), "QWCTranslationEditor");
 
 
         public static AppOptions FromDisk()
