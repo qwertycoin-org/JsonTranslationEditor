@@ -41,15 +41,18 @@ namespace QWCTranslationEditor
             var languageSettings = new List<LanguageSetting>();
             try
             {
+                // MessageBox.Show("Opened " + language + " with content:\n" + content);
                 dynamic myObj = JsonConvert.DeserializeObject(content);
                 foreach (JProperty jproperty in myObj)
                 {
-                    ProcessSettings(language, languageSettings, (JToken)jproperty);
+                    // MessageBox.Show(jproperty.ToString());
+                    ProcessSettings(language, languageSettings, jproperty);
                 }
             }
             catch (Exception ex)
             {
-                // MessageBox.Show("Invalid json in " + language);
+                 MessageBox.Show("Invalid json in " + language);
+                 // MessageBox.Show(ex.ToString());
             }
             settings.AddRange(languageSettings);
         }
@@ -81,12 +84,18 @@ namespace QWCTranslationEditor
             {
                 foreach (var childProperty in property.Children())
                 {
+                    // MessageBox.Show(childProperty.ToString());
                     ProcessSettings(language, list, childProperty);
                 }
             }
             else
             {
-                list.Add(new LanguageSetting() { Namespace = CleanPath(property.Path), Value = property.ToObject<string>(), Language = language });
+                list.Add(new LanguageSetting() {
+                    Namespace = CleanPath(property.Path),
+                    // Value = property.ToObject<string>(),
+                    Value = property.ToString(),
+                    Language = language
+                });
             }
         }
 

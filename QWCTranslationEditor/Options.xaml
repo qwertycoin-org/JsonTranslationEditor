@@ -5,16 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QWCTranslationEditor"
         mc:Ignorable="d"
-        Title="Options" Height="230" Width="300">
+        Title="Options" Height="229.238" Width="305">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition x:Name="ContentColumn" Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
-            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="51"></RowDefinition>
+            <RowDefinition Height="0"/>
         </Grid.RowDefinitions>
-        <ScrollViewer x:Name="ContentScroller">
+        <ScrollViewer x:Name="ContentScroller" Margin="0" UseLayoutRounding="False">
             <StackPanel>
                 <TextBlock>Save Style</TextBlock>
                 <StackPanel>
@@ -32,10 +33,10 @@
             </StackPanel>
         </ScrollViewer>
 
-        <StackPanel Grid.Row="2">
-            <Button Click="SaveOptions">Save</Button>
-            <Button Click="CloseOptions">Close</Button>
+        <StackPanel Grid.Row="1">
+            <Button Click="SaveOptions" Margin="5,0">Save</Button>
+            <Button Click="CloseOptions" Margin="5">Close</Button>
         </StackPanel>
-        
+
     </Grid>
 </Window>

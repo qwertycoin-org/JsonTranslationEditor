@@ -40,7 +40,7 @@ namespace QWCTranslationEditor
                 return options;
             }
 
-            return new AppOptions() { SaveStyle = SaveStyles.Json, PageSize = 100, TruncateResultsOver = 2000, LoadingDepth= 1 };
+            return new AppOptions() { SaveStyle = SaveStyles.Json, PageSize = 100, TruncateResultsOver = 2000, LoadingDepth= 10 };
 
         }
         public void ToDisk()
