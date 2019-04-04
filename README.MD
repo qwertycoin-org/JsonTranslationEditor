@@ -30,7 +30,7 @@ or
 ```
 
 
-![screenshot-mainwindow](https://github.com/thesmallbang/JsonTranslationEditor/blob/master/JsonTranslationEditor/Assets/Images/screenshot1.png "Main Window")
+![screenshot-mainwindow](https://github.com/qwertycoin-org/JsonTranslationEditor/blob/master/QWCTranslationEditor/Assets/Images/screenshot1.png "Main Window")
 
 ## Hotkeys
 ```
